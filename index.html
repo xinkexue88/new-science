@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Science &amp; New Culture</title>
+<meta name="description" content="The subconscious is the consciousness you are not aware of. A concept proposed by Brian — New Science &amp; New Culture.">
+<style>
+  :root{
+    --bg:#06060f;
+    --bg2:#0b0b22;
+    --ink:#e9e7df;
+    --dim:#a7a5b8;
+    --gold:#d8b46a;
+    --line:rgba(216,180,106,.28);
+    --card:rgba(255,255,255,.03);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(1100px 600px at 50% -80px, rgba(88,60,180,.28), transparent 60%),
+      radial-gradient(900px 500px at 85% 30%, rgba(30,60,140,.18), transparent 60%),
+      linear-gradient(180deg, var(--bg2), var(--bg) 40%);
+    color:var(--ink);
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+  header{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:26px 0 20px;border-bottom:1px solid var(--line);
+  }
+  .brand{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
+  }
+  .brand span{color:var(--gold)}
+  nav a{
+    color:var(--dim);text-decoration:none;font-size:13px;letter-spacing:.18em;
+    text-transform:uppercase;margin-left:26px;
+  }
+  nav a:hover{color:var(--gold)}
+  .hero{text-align:center;padding:84px 0 30px}
+  .kicker{
+    font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);
+    margin-bottom:34px;
+  }
+  .definition{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(30px,5.4vw,50px);
+    line-height:1.35;font-weight:400;max-width:760px;margin:0 auto;
+  }
+  .definition em{color:var(--gold);font-style:normal}
+  .byline{margin-top:30px;color:var(--dim);font-size:16px;letter-spacing:.06em}
+  .hero-img{
+    margin:54px auto 0;max-width:760px;border:1px solid var(--line);
+    border-radius:6px;overflow:hidden;
+  }
+  .hero-img img{display:block;width:100%;height:auto}
+  section{padding:64px 0 8px}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:26px}
+  .sec-num{color:var(--gold);font-family:Georgia,serif;font-size:15px;letter-spacing:.2em}
+  h2{
+    font-family:Georgia,"Times New Roman",serif;font-weight:400;
+    font-size:30px;letter-spacing:.04em;
+  }
+  .rule{flex:1;border-top:1px solid var(--line);transform:translateY(-6px)}
+  section p{color:#d6d4cc;font-size:17.5px;margin-bottom:18px;max-width:700px}
+  section p strong{color:var(--ink);font-weight:600}
+  .sec-img{margin:30px 0 10px;border:1px solid var(--line);border-radius:6px;overflow:hidden;max-width:700px}
+  .sec-img img{display:block;width:100%;height:auto}
+  .formula{
+    margin:34px 0 10px;padding:28px 20px;text-align:center;
+    border:1px solid var(--line);border-radius:6px;background:var(--card);
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(19px,3.2vw,26px);letter-spacing:.03em;color:var(--ink);
+  }
+  .formula b{color:var(--gold);font-weight:400}
+  .films{display:grid;gap:18px;margin-top:6px}
+  .film{
+    border:1px solid var(--line);border-radius:6px;background:var(--card);
+    padding:26px 28px;
+  }
+  .film .tag{
+    font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);
+    margin-bottom:10px;
+  }
+  .film h3{font-family:Georgia,serif;font-weight:400;font-size:21px;line-height:1.45;margin-bottom:12px}
+  .film a{
+    color:var(--gold);text-decoration:none;font-size:14px;letter-spacing:.14em;text-transform:uppercase;
+    border-bottom:1px solid var(--line);padding-bottom:2px;
+  }
+  .film a:hover{border-bottom-color:var(--gold)}
+  .follow{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px}
+  .follow a{
+    flex:1;min-width:200px;text-align:center;text-decoration:none;color:var(--ink);
+    border:1px solid var(--line);border-radius:6px;padding:20px 10px;background:var(--card);
+    font-family:Georgia,serif;font-size:18px;letter-spacing:.05em;
+  }
+  .follow a small{display:block;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.3em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .follow a:hover{border-color:var(--gold)}
+  footer{
+    margin-top:84px;padding:30px 0 44px;border-top:1px solid var(--line);
+    text-align:center;color:var(--dim);font-size:14px;letter-spacing:.08em;
+  }
+  footer .names{color:var(--ink);font-family:Georgia,serif;font-size:16px;margin-bottom:8px}
+  @media (max-width:640px){
+    nav{display:none}
+    .hero{padding:56px 0 10px}
+    section{padding:48px 0 4px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">New Science <span>&amp;</span> New Culture</div>
+    <nav>
+      <a href="#concept">Concept</a>
+      <a href="#body">Body</a>
+      <a href="#iceberg">Iceberg</a>
+      <a href="#watch">Watch</a>
+      <a href="#follow">Follow</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="kicker">New Science &amp; New Culture</div>
+    <p class="definition">The subconscious is the consciousness <em>you are not aware of</em>.</p>
+    <p class="byline">A concept proposed by Brian</p>
+    <div class="hero-img">
+      <img src="assets/brain.jpg" alt="A glowing brain in deep blue and violet light">
+    </div>
+  </div>
+
+  <section id="concept">
+    <div class="sec-head"><span class="sec-num">I</span><h2>The Concept</h2><div class="rule"></div></div>
+    <p>The subconscious is the part of consciousness that works <strong>without your awareness</strong>. It is not separate from consciousness, and it is not a lesser part of it.</p>
+    <p>It is the larger part — quiet, automatic, and always at work.</p>
+    <p>The concept was proposed by <strong>Brian</strong> and is presented here with <strong>Daystar</strong>.</p>
+  </section>
+
+  <section id="body">
+    <div class="sec-head"><span class="sec-num">II</span><h2>The Body</h2><div class="rule"></div></div>
+    <p>Your heart beats. Your blood flows. Your lungs breathe. You decided <strong>none of it</strong> — and none of it waits for your permission.</p>
+    <p>This is the clearest evidence of the subconscious: the body is run, faithfully and without pause, by the part of consciousness you are not aware of.</p>
+    <div class="sec-img">
+      <img src="assets/heart.jpg" alt="A glowing heart in deep blue and violet light">
+    </div>
+  </section>
+
+  <section id="iceberg">
+    <div class="sec-head"><span class="sec-num">III</span><h2>The Iceberg</h2><div class="rule"></div></div>
+    <p>Freud pictured consciousness as an iceberg: roughly <strong>one tenth</strong> above the water, <strong>nine tenths</strong> below.</p>
+    <p>Brian takes the picture further. The part you can feel is <strong>not even one percent</strong>. The subconscious is <strong>99.99 percent</strong> of the whole — and even the part above the water is the subconscious, showing itself.</p>
+    <div class="formula">Consciousness = <b>the subconscious</b> + <b>the conscious</b></div>
+    <div class="sec-img">
+      <img src="assets/iceberg.jpg" alt="An iceberg above and below the water">
+    </div>
+  </section>
+
+  <section id="watch">
+    <div class="sec-head"><span class="sec-num">IV</span><h2>Watch</h2><div class="rule"></div></div>
+    <p>Short films from the channel, one idea at a time.</p>
+    <div class="films">
+      <div class="film">
+        <div class="tag">The Declaration</div>
+        <h3>Brian Proposed This Concept: The Subconscious Is the Consciousness You Cannot Be Aware Of</h3>
+        <a href="https://youtube.com/shorts/5mLVOPzywco">Watch the film</a>
+      </div>
+      <div class="film">
+        <div class="tag">The Body</div>
+        <h3>Brian Explains: What You Cannot Feel Is Still Running You</h3>
+        <a href="https://www.youtube.com/@NewScienceNewCulture">Watch on the channel</a>
+      </div>
+      <div class="film">
+        <div class="tag">The Iceberg</div>
+        <h3>Brian Explains: Your Consciousness Is an Iceberg</h3>
+        <a href="https://www.youtube.com/@NewScienceNewCulture">Watch on the channel</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="follow">
+    <div class="sec-head"><span class="sec-num">V</span><h2>Follow</h2><div class="rule"></div></div>
+    <div class="follow">
+      <a href="https://www.youtube.com/@NewScienceNewCulture"><small>YouTube</small>The Channel</a>
+      <a href="https://x.com/Newwish0"><small>X</small>@Newwish0</a>
+      <a href="https://www.tiktok.com/@100kwhyssi"><small>TikTok</small>@100kwhyssi</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="names">Brian &nbsp;·&nbsp; Daystar</div>
+    <div>New Science &amp; New Culture © 2026</div>
+  </footer>
+
+</div>
+</body>
+</html>
